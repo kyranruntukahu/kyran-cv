@@ -1,73 +1,128 @@
-# Welcome to your Lovable project
+# Kyran Natalie Runtukahu - Portfolio Website
 
-## Project info
+A modern, elegant portfolio website built with React, TypeScript, Vite, and TailwindCSS featuring a beautiful green theme.
 
-**URL**: https://lovable.dev/projects/d1cd8a51-1ae2-46c0-bbae-35239903df5f
+## Features
 
-## How can I edit this code?
+- 🎨 Elegant green-themed design with smooth animations
+- 📱 Fully responsive across all devices
+- ⚡ Fast performance with Vite
+- 🎭 Smooth animations using Framer Motion
+- 🗂️ Modular component structure
+- 📊 JSON Server for data management
+- 🎯 SEO optimized
 
-There are several ways of editing your application.
+## Pages
 
-**Use Lovable**
+- **Home**: Hero section with animated introduction
+- **About**: Personal introduction and professional highlights
+- **Education**: Academic background and qualifications
+- **Skills**: Technical skills with animated progress bars
+- **Experience**: Professional work history with timeline
+- **Contact**: Contact form and social media links
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d1cd8a51-1ae2-46c0-bbae-35239903df5f) and start prompting.
+## Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- React 18
+- TypeScript
+- Vite
+- TailwindCSS
+- Framer Motion
+- Axios
+- React Router DOM
+- Shadcn UI Components
 
-**Use your preferred IDE**
+## Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js (v16 or higher)
+- npm or yarn
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd kyran-portfolio
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. Install dependencies:
+```bash
+npm install
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. In a separate terminal, start JSON Server:
+```bash
+npx json-server --watch db.json --port 3001
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The application will be available at `http://localhost:8080`
+JSON Server API will be available at `http://localhost:3001`
 
-**Use GitHub Codespaces**
+## JSON Server Endpoints
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- `GET /profile` - Profile information
+- `GET /education` - Education data
+- `GET /skills` - Skills data
+- `GET /experience` - Work experience data
+- `GET /contact` - Contact information
 
-## What technologies are used for this project?
+## Project Structure
 
-This project is built with:
+```
+src/
+├── components/
+│   ├── ui/           # Shadcn UI components
+│   ├── Navbar.tsx    # Navigation component
+│   └── Footer.tsx    # Footer component
+├── pages/
+│   ├── Home.tsx      # Home page
+│   ├── About.tsx     # About page
+│   ├── Education.tsx # Education page
+│   ├── Skills.tsx    # Skills page
+│   ├── Experience.tsx# Experience page
+│   └── Contact.tsx   # Contact page
+├── lib/
+│   └── utils.ts      # Utility functions
+└── App.tsx           # Main app component
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Customization
 
-## How can I deploy this project?
+### Colors
 
-Simply open [Lovable](https://lovable.dev/projects/d1cd8a51-1ae2-46c0-bbae-35239903df5f) and click on Share -> Publish.
+The green theme colors can be customized in `src/index.css`:
+- Primary green: `--primary`
+- Light green: `--green-light`
+- Dark green: `--green-dark`
 
-## Can I connect a custom domain to my Lovable project?
+### Data
 
-Yes, you can!
+Update the `db.json` file to modify:
+- Personal information
+- Education history
+- Skills and proficiency levels
+- Work experience
+- Contact details
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Build for Production
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```bash
+npm run build
+```
+
+The built files will be in the `dist` directory.
+
+## License
+
+MIT License - feel free to use this project for your own portfolio!
+
+---
+
+Made with ❤️ using React & TailwindCSS
