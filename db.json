@@ -1,0 +1,123 @@
+{
+  "profile": {
+    "name": "Kyran Natalie Runtukahu",
+    "title": "Frontend Developer & Designer",
+    "bio": "Passionate about creating beautiful, functional, and user-friendly web experiences that make a difference.",
+    "email": "kyran.runtukahu@email.com",
+    "phone": "+62 812-3456-7890",
+    "location": "Manado, Indonesia"
+  },
+  "education": [
+    {
+      "id": 1,
+      "institution": "University of Technology",
+      "degree": "Bachelor of Science",
+      "field": "Computer Science",
+      "year": "2019 - 2023",
+      "description": "Focus on Software Engineering and Web Development"
+    },
+    {
+      "id": 2,
+      "institution": "Tech High School",
+      "degree": "High School Diploma",
+      "field": "Science Track",
+      "year": "2016 - 2019",
+      "description": "Excellence in Mathematics and Computer Science"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "name": "React.js",
+      "level": 90,
+      "category": "Frontend"
+    },
+    {
+      "id": 2,
+      "name": "TypeScript",
+      "level": 85,
+      "category": "Frontend"
+    },
+    {
+      "id": 3,
+      "name": "TailwindCSS",
+      "level": 95,
+      "category": "Frontend"
+    },
+    {
+      "id": 4,
+      "name": "JavaScript",
+      "level": 90,
+      "category": "Frontend"
+    },
+    {
+      "id": 5,
+      "name": "HTML/CSS",
+      "level": 95,
+      "category": "Frontend"
+    },
+    {
+      "id": 6,
+      "name": "Node.js",
+      "level": 75,
+      "category": "Backend"
+    },
+    {
+      "id": 7,
+      "name": "Git",
+      "level": 85,
+      "category": "Tools"
+    },
+    {
+      "id": 8,
+      "name": "Figma",
+      "level": 80,
+      "category": "Design"
+    },
+    {
+      "id": 9,
+      "name": "Vite",
+      "level": 80,
+      "category": "Tools"
+    },
+    {
+      "id": 10,
+      "name": "Framer Motion",
+      "level": 85,
+      "category": "Frontend"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "company": "Tech Solutions Inc.",
+      "position": "Frontend Developer",
+      "year": "2023 - Present",
+      "description": "Leading frontend development projects using React, TypeScript, and modern web technologies. Collaborating with design and backend teams to create seamless user experiences."
+    },
+    {
+      "id": 2,
+      "company": "Digital Agency Co.",
+      "position": "Junior Web Developer",
+      "year": "2022 - 2023",
+      "description": "Developed responsive websites and web applications for various clients. Implemented pixel-perfect designs and ensured cross-browser compatibility."
+    },
+    {
+      "id": 3,
+      "company": "Startup Hub",
+      "position": "Web Development Intern",
+      "year": "2021 - 2022",
+      "description": "Assisted in building and maintaining web applications. Gained hands-on experience with HTML, CSS, JavaScript, and version control systems."
+    }
+  ],
+  "contact": {
+    "email": "kyran.runtukahu@email.com",
+    "phone": "+62 812-3456-7890",
+    "location": "Manado, Indonesia",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "github": "https://github.com",
+      "instagram": "https://instagram.com"
+    }
+  }
+}

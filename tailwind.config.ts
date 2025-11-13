@@ -47,16 +47,20 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        green: {
+          light: "hsl(var(--green-light))",
+          medium: "hsl(var(--green-medium))",
+          dark: "hsl(var(--green-dark))",
+          darker: "hsl(var(--green-darker))",
         },
+        hero: {
+          dark: "hsl(var(--hero-dark))",
+          accent: "hsl(var(--hero-accent))",
+        },
+      },
+      boxShadow: {
+        'green': '0 4px 14px 0 hsl(var(--shadow-green))',
+        'green-lg': '0 10px 40px 0 hsl(var(--shadow-green-lg))',
       },
       borderRadius: {
         lg: "var(--radius)",
