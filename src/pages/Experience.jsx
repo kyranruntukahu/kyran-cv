@@ -3,16 +3,8 @@ import { motion } from 'framer-motion';
 import axios from 'axios';
 import { Briefcase, Calendar } from 'lucide-react';
 
-interface ExperienceItem {
-  id: number;
-  company: string;
-  position: string;
-  year: string;
-  description: string;
-}
-
 const Experience = () => {
-  const [experience, setExperience] = useState<ExperienceItem[]>([]);
+  const [experience, setExperience] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -29,21 +21,24 @@ const Experience = () => {
             company: 'Tech Solutions Inc.',
             position: 'Frontend Developer',
             year: '2023 - Present',
-            description: 'Leading frontend development projects using React, TypeScript, and modern web technologies. Collaborating with design and backend teams to create seamless user experiences.',
+            description:
+              'Leading frontend development projects using React, TypeScript, and modern web technologies. Collaborating with design and backend teams to create seamless user experiences.',
           },
           {
             id: 2,
             company: 'Digital Agency Co.',
             position: 'Junior Web Developer',
             year: '2022 - 2023',
-            description: 'Developed responsive websites and web applications for various clients. Implemented pixel-perfect designs and ensured cross-browser compatibility.',
+            description:
+              'Developed responsive websites and web applications for various clients. Implemented pixel-perfect designs and ensured cross-browser compatibility.',
           },
           {
             id: 3,
             company: 'Startup Hub',
             position: 'Web Development Intern',
             year: '2021 - 2022',
-            description: 'Assisted in building and maintaining web applications. Gained hands-on experience with HTML, CSS, JavaScript, and version control systems.',
+            description:
+              'Assisted in building and maintaining web applications. Gained hands-on experience with HTML, CSS, JavaScript, and version control systems.',
           },
         ]);
       } finally {
@@ -99,9 +94,18 @@ const Experience = () => {
                   <div className="absolute left-8 md:left-1/2 w-4 h-4 bg-primary rounded-full transform md:-translate-x-1/2 z-10 ring-4 ring-background" />
 
                   {/* Content card */}
-                  <div className={`ml-20 md:ml-0 md:w-5/12 ${index % 2 === 0 ? 'md:mr-auto md:pr-12' : 'md:ml-auto md:pl-12'}`}>
+                  <div
+                    className={`ml-20 md:ml-0 md:w-5/12 ${
+                      index % 2 === 0
+                        ? 'md:mr-auto md:pr-12'
+                        : 'md:ml-auto md:pl-12'
+                    }`}
+                  >
                     <motion.div
-                      whileHover={{ scale: 1.03, boxShadow: '0 10px 40px 0 hsl(var(--shadow-green-lg))' }}
+                      whileHover={{
+                        scale: 1.03,
+                        boxShadow: '0 10px 40px 0 hsl(var(--shadow-green-lg))',
+                      }}
                       className="bg-card rounded-xl shadow-green p-6 hover:shadow-green-lg transition-all duration-300 cursor-pointer"
                     >
                       <div className="flex items-center gap-3 mb-3">
