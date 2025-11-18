@@ -67,11 +67,6 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.9 }}
               className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             >
-              <Button variant="hero" size="lg" className="group">
-                <Download className="mr-2 group-hover:animate-bounce" size={20} />
-                Download CV
-              </Button>
-
               <Link to="/contact">
                 <Button variant="heroOutline" size="lg" className="group">
                   <Mail className="mr-2 group-hover:scale-110 transition-transform" size={20} />
