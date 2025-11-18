@@ -14,14 +14,6 @@ const Footer = () => {
               © {currentYear} Kyran Natalie Runtukahu. All rights reserved.
             </span>
           </div>
-
-          {/* Right Section */}
-          <div className="flex items-center space-x-2 text-sm">
-            <span>Made with</span>
-            <Heart size={16} className="fill-current animate-pulse" />
-            <span>using React & TailwindCSS</span>
-          </div>
-
         </div>
       </div>
     </footer>
