@@ -44,14 +44,14 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'kyran.runtukahu@email.com',
-      href: 'mailto:kyran.runtukahu@email.com',
+      value: 'kyranruntukahu38@gmail.com',
+      href: 'mailto:kyranruntukahu38@gmail.com',
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+62 812-3456-7890',
-      href: 'tel:+6281234567890',
+      value: '+62 857-5748-4892',
+      href: 'tel:+6285757484892',
     },
     {
       icon: MapPin,
@@ -63,8 +63,8 @@ const Contact = () => {
 
   const socialLinks = [
     { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
+    { icon: Github, href: 'https://github.com/kyranruntukahu', label: 'GitHub' },
+    { icon: Instagram, href: 'https://instagram.com/kyrannatalie', label: 'Instagram' },
   ];
 
   return (
@@ -208,6 +208,8 @@ const Contact = () => {
         </motion.div>
       </div>
     </div>
+
+    
   );
 };
 

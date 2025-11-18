@@ -19,19 +19,19 @@ const Education = () => {
         setEducation([
           {
             id: 1,
-            institution: 'University of Technology',
-            degree: 'Bachelor of Science',
+            institution: 'Universitas Klabat',
+            degree: 'Informatics',
             field: 'Computer Science',
-            year: '2019 - 2023',
-            description: 'Focus on Software Engineering and Web Development',
+            year: '2023 - Present',
+            description: 'Pursuing a degree in Informatics with a focus on software development',
           },
           {
             id: 2,
-            institution: 'Tech High School',
-            degree: 'High School Diploma',
+            institution: 'SMA 1 Manado',
+            degree: 'Science Major',
             field: 'Science Track',
-            year: '2016 - 2019',
-            description: 'Excellence in Mathematics and Computer Science',
+            year: '2020 - 2023',
+            description: 'Active student in Science major and School events',
           },
         ]);
       } finally {
