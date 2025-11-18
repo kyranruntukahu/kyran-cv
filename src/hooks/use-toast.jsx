@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { ToastProps } from "@/components/ui/toast"; // jika ini error, hapus saja
+// Tidak ada TypeScript. Tidak ada ToastProps.
 
 const TOAST_LIMIT = 1;
 const TOAST_REMOVE_DELAY = 1000000;
@@ -11,13 +11,6 @@ function genId() {
   count = (count + 1) % Number.MAX_SAFE_INTEGER;
   return count.toString();
 }
-
-const actionTypes = {
-  ADD_TOAST: "ADD_TOAST",
-  UPDATE_TOAST: "UPDATE_TOAST",
-  DISMISS_TOAST: "DISMISS_TOAST",
-  REMOVE_TOAST: "REMOVE_TOAST",
-};
 
 const toastTimeouts = new Map();
 
@@ -86,7 +79,6 @@ export const reducer = (state, action) => {
 };
 
 const listeners = [];
-
 let memoryState = { toasts: [] };
 
 function dispatch(action) {
@@ -94,7 +86,7 @@ function dispatch(action) {
   listeners.forEach((listener) => listener(memoryState));
 }
 
-function toast(props) {
+export function toast(props) {
   const id = genId();
 
   const update = (newProps) =>
@@ -103,8 +95,7 @@ function toast(props) {
       toast: { ...newProps, id },
     });
 
-  const dismiss = () =>
-    dispatch({ type: "DISMISS_TOAST", toastId: id });
+  const dismiss = () => dispatch({ type: "DISMISS_TOAST", toastId: id });
 
   dispatch({
     type: "ADD_TOAST",
@@ -118,19 +109,14 @@ function toast(props) {
     },
   });
 
-  return {
-    id,
-    dismiss,
-    update,
-  };
+  return { id, dismiss, update };
 }
 
-function useToast() {
+export function useToast() {
   const [state, setState] = React.useState(memoryState);
 
   React.useEffect(() => {
     listeners.push(setState);
-
     return () => {
       const index = listeners.indexOf(setState);
       if (index > -1) listeners.splice(index, 1);
@@ -144,5 +130,3 @@ function useToast() {
       dispatch({ type: "DISMISS_TOAST", toastId }),
   };
 }
-
-export { useToast, toast };
